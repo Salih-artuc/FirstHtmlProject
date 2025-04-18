@@ -1,0 +1,40 @@
+body {
+	background-image: url("pngtree-website-electronic-technology-picture-image_2447237.jpg");
+}
+nav {
+	width: 100%;
+	height: 60px;
+	color: #f5f5dc;
+	background-color: #ff8c00;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+#name{
+	display: inline;
+	margin: 10%;
+}
+.navwords{
+	color: white;
+	text-decoration: none;
+	margin: 4%;
+}
+#projeler, #iletişim, #hakkımda{
+	margin: 5% auto 0 auto;
+	width: 60%;
+	height: auto;
+	background-color: burlywood;
+	text-decoration: none;
+	color: black;
+	padding-left: 15px; 
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.maddeler{
+	text-decoration: none;
+	color: black;
+}
