@@ -1,6 +1,38 @@
-body {
-	background-image: url("pngtree-website-electronic-technology-picture-image_2447237.jpg");
+.fs-7 { font-size: 0.75rem; } 
+@media (min-width: 500px) {
+	.fs-sm-6 { font-size: 0.9rem; }
 }
+@media (min-width: 768px) {
+	.fs-md-8 { font-size: 0.75rem; }
+}
+@media (min-width: 992px) {
+	.fs-lg-6 { font-size: 0.85rem; }
+}
+
+.div-rounded-md{
+	border-radius: 0rem;
+}
+@media (min-width: 992px) {
+    .div-rounded-md {
+      border-radius: 0.75rem; /* Bootstrap'ta rounded-3 ≈ 0.75rem */
+    }
+  }
+
+.m-lg-3{
+	margin: 0;
+}
+@media(min-width: 992px){
+	.m-lg-3{
+		margin: 1rem;
+	}
+}
+
+.border-solid{
+	border-top: 3px solid #3a506b;
+	border-bottom: 3px solid #3a506b;
+}
+
+
 nav {
 	width: 100%;
 	height: 60px;
