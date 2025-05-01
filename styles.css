@@ -1,3 +1,9 @@
+body{
+	padding-top: 80px;
+}
+
+
+/* hakkımda bölümü*/
 .fs-7 { font-size: 0.75rem; } 
 @media (min-width: 500px) {
 	.fs-sm-6 { font-size: 0.9rem; }
@@ -5,44 +11,44 @@
 @media (min-width: 768px) {
 	.fs-md-8 { font-size: 0.75rem; }
 }
-@media (min-width: 992px) {
-	.fs-lg-6 { font-size: 0.85rem; }
-}
 
 .div-rounded-md{
 	border-radius: 0rem;
 }
-@media (min-width: 992px) {
-    .div-rounded-md {
-      border-radius: 0.75rem; /* Bootstrap'ta rounded-3 ≈ 0.75rem */
-    }
-  }
 
-  .div-rounded-lg{
+.div-rounded-lg{
 	border-radius: 0rem;
 }
-@media (min-width: 992px) {
-    .div-rounded-lg {
-      border-radius: 1.75rem; /* Bootstrap'ta rounded-3 ≈ 0.75rem */
-    }
-  }
 
 .m-lg-3{
 	margin: 0;
 }
-@media(min-width: 992px){
+
+.border-solid{
+	border-top: 3px solid #21497b;
+	border-bottom: 3px solid #21497b;
+}
+
+@media (min-width: 992px) {
+	.fs-lg-6 {
+		font-size: 0.85rem;
+	}
+
+    .div-rounded-md {
+      border-radius: 0.75rem;
+    }
+
+    .div-rounded-lg {
+      border-radius: 1.75rem;
+    }
+
 	.m-lg-3{
 		margin: 1rem;
 	}
 }
 
-.border-solid{
-	border-top: 3px solid #3a506b;
-	border-bottom: 3px solid #3a506b;
-}
-
 .nav-link.active {
-	color: #6fb0ff !important; /* Bootstrap'in ana mavisi */
+	color: #6fb0ff !important;
 	background-color: #343a40;
 }
 
@@ -79,3 +85,188 @@
 }
 
 
+/* iletişim bölümü*/
+.communication-box{
+	background-color: #212529;
+	color: white;
+	border: 2px solid #3399cc;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.communication-box:hover{
+	border: 2px solid #3399cc;
+	background-color:rgb(19, 19, 26);
+}
+
+iframe{
+	width: 100%;
+	height: 440px;
+	margin-top: 18px;
+	border-radius: 20px;
+	border: 3px solid black !important;
+}
+
+#maps{
+	height: 490px;
+}
+@media(max-width: 992px){
+	#maps{
+		height: 250px;
+	}
+}
+
+#communication-form{
+	background-color: rgba(33,37,41,255);
+	color: white;
+}
+
+form{
+	padding: 5px;
+	border-radius: 15px;
+	border: #3399cc solid 2px;
+}
+
+input, textarea{
+	background-color: rgba(19, 19, 26, 0.9);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	margin-bottom: 20px !important;
+	margin-top: 2px !important;
+	padding: 2px 4px;
+}
+
+#topic{
+	width: 100%;
+}
+
+#message{
+	width: 100%;
+	height: 200px;
+}
+
+
+
+/*Projelerim kısmı*/
+.project-box{
+	background-color: rgba(33,37,41,255);
+	color: white;
+	border-radius: 18px;
+	padding: 0;
+	border: #3399cc solid 2px;
+}
+.project-title{
+	padding: 10px 20px;
+}
+
+
+/*Anasayfa kısmı*/
+
+.carousel{
+	display: flex;
+	width: 100%;
+	height: 600px;
+	float: right;
+}
+
+.carousel-item{
+	height: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	object-position: center;
+}
+
+.carousel-caption {
+	bottom: 0 !important;
+	left: 0 !important;
+	width: 100%;
+	padding: 20px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	text-align: center;
+  }
+  
+.carousel-caption a{
+	text-decoration: none;
+	color: white;
+}
+  
+.main-page-project{
+	width: 100%;
+	float: right;
+	padding: 10px;
+	background-color: black;
+	color: wheat;
+	text-align: center;
+	align-items: center;
+
+}
+
+.progress-circle {
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+  	border: 10px solid #28a745;
+  	position: relative;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+#completed-circle, #continued-circle{
+	border-bottom-color: wheat;
+	border-right-color: wheat;
+}
+
+.gallery-caption {
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+	height: 150px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 2px 2px 2px black; 
+}
+.gallery-block{
+	padding: 10px;
+	height: 300px;
+}
+.gallery-block a img{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border: #212529 solid 2px;
+}
+.gallery-block a img:hover{
+	transform: scale(1.03);
+	transition: transform 0.3s ease
+}
+.gallery-end{
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1) );
+	height: 100px;
+}
+.image-box{
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0));
+	color: white;
+	text-shadow: 2px 2px 2px black; 
+}
+.image-box img{
+	width: 100%;
+	height: auto;
+	margin: 15px 0 ;
+	object-fit: cover;
+	border-radius: 30px;
+}
+.image-box img:hover{
+	transform: scale(1.03);
+	transition: transform 0.3s ease;
+}

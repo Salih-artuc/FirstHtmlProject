@@ -8,12 +8,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Hakkımda|Salih Artuç</title>
 	</head>
-	<body>
+	<body style="background-color:rgb(174, 174, 174);">
 		<!--NAVBAR KISMI-->
-		<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-			<a class="navbar-brand " href="index.html">
-				<img src="ChatGPT Image 22 Nis 2025 22_52_01.PNG" class="ms-3" style="max-height: 5vh;">
-				<p class="d-inline-block pt-2 pe-3 me-2 border-end border-2 border-primary ">Salih Artuç</p>
+		<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+			<a class="navbar-brand " id="main-nav" href="index.html">
+				<img src="RESİMLER/ChatGPT Image 22 Nis 2025 22_52_01.PNG" class="ms-3" style="max-height: 5vh;">
+				<p class="d-inline-block pt-2 pe-3 border-end border-2 border-primary ">Salih Artuç</p>
 			</a>
 
 			<!--BUTON MENÜ-->
@@ -21,7 +21,7 @@
 				<span class="navbar-toggler-icon "></span>
 			</button>
 
-			<div class="collapse navbar-collapse bg-dark ps-4" id="menu">
+			<div class="collapse navbar-collapse bg-dark ms-3" id="menu">
 				<ul class="navbar-nav ">
 					<li class="nav-item me-3">
 						<a class="nav-link active rounded-3 border border-2 border-primary ps-3" href="index.html">
@@ -47,7 +47,144 @@
 			</div>
 		</nav>
 
-		<footer class="bg-dark text-white text-center py-4 mt-5">
+
+
+		 <!--anasayfa slider-->
+		 <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+			<div class="carousel-inner">
+		
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="RESİMLER/slider1.png" alt="Slider 1">
+					<div class="carousel-caption">
+						<a href="projelerim.html">
+							<h2>Projelerim</h2>
+							<p>Gelişim sürecimde öğrendiklerimi pratiğe dökmek adına çeşitli projeler geliştirdim.
+								Her proje, hem teknik becerilerimi hem de problem çözme yeteneğimi bir adım ileriye taşıdı.
+								Deneyim kazandıkça daha işlevsel ve kullanıcı dostu çözümler üretmeye odaklandım.</p>
+						</a>
+					</div>
+				</div>
+		
+				<div class="carousel-item">
+					<img class="d-block w-100" src="RESİMLER/slider2.jpeg" alt="Slider 2">
+					<div class="carousel-caption">
+						<a href="hakkımda.html">
+							<h2>Ben Kimim?</h2>
+							<p>"Benim kim olduğumu merak ediyorsanız, geçmişim, yeteneklerim ve hedeflerim hakkında daha fazla bilgi edinmek 
+								için 'Ben Kimim?' sayfamı ziyaret edebilirsiniz. Kendi yolculuğumda öğrendiklerimi ve deneyimlerimi paylaşarak, 
+								sizi daha derin bir anlayışa yönlendirmeyi amaçlıyorum."</p>
+						</a>
+					</div>
+				</div>
+		
+				<div class="carousel-item">
+					<img class="d-block w-100" src="RESİMLER/slider3.png" alt="Slider 3">
+					<div class="carousel-caption">
+						<a href="iletişim.html">
+							<h2>İletişime Geçin...</h2>
+							<p>Benimle iletişime geçmek isterseniz, sorularınızı, önerilerinizi veya herhangi bir konuda görüşlerinizi paylaşmak için 
+								'İletişim' sayfamı ziyaret edebilirsiniz. Sizinle daha yakın bir bağlantı kurmayı ve yardımcı olmayı dört gözle bekliyorum.</p>
+						</a>
+					</div>
+				</div>
+		
+			</div>
+		</div>
+		
+		<!--proje grafikleri-->
+		<div class="container-fluid main-page-project">
+			<div class="row">
+				<div class="col-4 d-flex flex-column align-items-center">
+					<h4 class="pb-2">Başlatılan Projeler</h4>
+					<div class="progress-circle">
+						<span>2</span>
+					</div>
+					  
+				</div>
+				
+				<div class="col-4 d-flex flex-column align-items-center">
+					<h4 class="pb-2">Tamamlanan Projeler</h4>
+					<div class="progress-circle" id="completed-circle">
+						<span>1</span>
+					</div>
+				</div>
+
+				<div class="col-4 d-flex flex-column align-items-center">
+					<h4 class="pb-2">Devam Eden Projeler</h4>
+					<div class="progress-circle" id="continued-circle">
+						<span>1</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Öne Çıkan Projeler-->
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-12 gallery-caption">
+					<h3>Öne Çıkan Projeler</h3>
+				</div>
+
+				<div class="col-12 col-lg-6 p-5 image-box">
+					<div class="p-3">
+						<h3>Hesap Makinesi</h3>
+						<a href="https://salih-artuc.github.io/project2-CALCULATOR/" target="_blank">
+							<img src="RESİMLER/div-1.png">
+						</a>
+						<p>HTML, CSS ve JavaScript ile basit bir hesap makinesi geliştirdim. Bu proje, temel dört işlemi tarayıcı üzerinden kolayca yapmayı sağlıyor. Tasarımı sade, kullanımı pratiktir.</p>
+						<p></p>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6 p-5 image-box">
+					<div class="p-3">
+						<h3>Yapılacaklar Listesi</h3>
+						<a href="https://salih-artuc.github.io/project3-ToDoList/">
+							<img src="RESİMLER/div-2.png" >
+						</a>
+						<p>JavaScript öğrenirken geliştirdiğim bu yapılacaklar listesi, görev ekleme, tamamlama ve silme işlevlerini içeriyor. Temel HTML, CSS ve JavaScript kullanarak sade ve işlevsel bir uygulama oluşturdum.</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--Fotoğraf Galerisi-->
+		<div class="gallery container-fluid">
+			<div class="row">
+				<div class="col-12 gallery-caption">
+					<h3>Fotoğraf Galerisi</h3>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 gallery-block">
+					<a href="RESİMLER/gallery-1.jpg" target="_blank">
+						<img src="RESİMLER/gallery-1.jpg" alt="gallery-1">
+					</a>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 gallery-block">
+					<a href="RESİMLER/gallery-2.jpg" target="_blank">
+						<img src="RESİMLER/gallery-2.jpg" alt="gallery-2">
+					</a>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4 gallery-block">
+					<a href="RESİMLER/gallery3.jpg" target="_blank">
+						<img src="RESİMLER/gallery3.jpg" alt="gallery-3">
+					</a>
+				</div>
+
+				<div class="col-12 gallery-end"></div>
+			</div>
+		</div>
+
+		<footer class="bg-dark text-white text-center py-2">
 			&copy; 2025 ARTUC. Tüm hakları saklıdır.
 		</footer>
 
